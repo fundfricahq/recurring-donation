@@ -1,26 +1,25 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <donate-dialog></donate-dialog>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import DonateDialog from "./components/DonateDialog.vue";
 export default {
-  name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    "donate-dialog": DonateDialog,
+  },
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+* {
+  box-sizing: border-box;
+}
+html {
+  font-family: "Jost", sans-serif;
+}
+body {
+  margin: 0;
+  background-color: black;
 }
 </style>
